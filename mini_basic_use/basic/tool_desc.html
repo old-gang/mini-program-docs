@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.48">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <title>开发工具介绍 | 小程序</title><meta name="description" content="微信小程序（Mini Program），简称小程序，是一种不需要下载安装即可使用的应用">
+    <link rel="modulepreload" href="/mini-program-docs/assets/app.19a248fc.js"><link rel="modulepreload" href="/mini-program-docs/assets/tool_desc.html.6c0b6946.js"><link rel="modulepreload" href="/mini-program-docs/assets/tool_desc.html.3706be69.js"><link rel="prefetch" href="/mini-program-docs/assets/index.html.5eab30c3.js"><link rel="prefetch" href="/mini-program-docs/assets/index.html.c457182c.js"><link rel="prefetch" href="/mini-program-docs/assets/index.html.b90a2a4d.js"><link rel="prefetch" href="/mini-program-docs/assets/api.html.58c74447.js"><link rel="prefetch" href="/mini-program-docs/assets/c_project.html.c1895e00.js"><link rel="prefetch" href="/mini-program-docs/assets/dispatch.html.395a1c76.js"><link rel="prefetch" href="/mini-program-docs/assets/global_config.html.b96d20bd.js"><link rel="prefetch" href="/mini-program-docs/assets/life_circle.html.e6b13d90.js"><link rel="prefetch" href="/mini-program-docs/assets/page_config.html.0e2d0cec.js"><link rel="prefetch" href="/mini-program-docs/assets/plug.html.c9f1f909.js"><link rel="prefetch" href="/mini-program-docs/assets/profile.html.bb19dcf1.js"><link rel="prefetch" href="/mini-program-docs/assets/index.html.35a7cd94.js"><link rel="prefetch" href="/mini-program-docs/assets/routes.html.dc059d9a.js"><link rel="prefetch" href="/mini-program-docs/assets/wxml.html.6feb32f3.js"><link rel="prefetch" href="/mini-program-docs/assets/wxs.html.2a35273c.js"><link rel="prefetch" href="/mini-program-docs/assets/customComponent.html.ca6bc96f.js"><link rel="prefetch" href="/mini-program-docs/assets/customTabbar.html.453ae7c1.js"><link rel="prefetch" href="/mini-program-docs/assets/stateManger.html.7d53b06e.js"><link rel="prefetch" href="/mini-program-docs/assets/subpackages.html.ea726770.js"><link rel="prefetch" href="/mini-program-docs/assets/use_vantUI.html.0304baea.js"><link rel="prefetch" href="/mini-program-docs/assets/index.html.17708587.js"><link rel="prefetch" href="/mini-program-docs/assets/flex.html.fc20f832.js"><link rel="prefetch" href="/mini-program-docs/assets/mobile.html.6dff4ef1.js"><link rel="prefetch" href="/mini-program-docs/assets/index.html.45a63e0c.js"><link rel="prefetch" href="/mini-program-docs/assets/404.html.265028f6.js"><link rel="prefetch" href="/mini-program-docs/assets/index.html.9f2f767a.js"><link rel="prefetch" href="/mini-program-docs/assets/index.html.7c15cfd6.js"><link rel="prefetch" href="/mini-program-docs/assets/index.html.c148f322.js"><link rel="prefetch" href="/mini-program-docs/assets/api.html.8fabdca4.js"><link rel="prefetch" href="/mini-program-docs/assets/c_project.html.2760d6b1.js"><link rel="prefetch" href="/mini-program-docs/assets/dispatch.html.0b7f32f1.js"><link rel="prefetch" href="/mini-program-docs/assets/global_config.html.50f929d3.js"><link rel="prefetch" href="/mini-program-docs/assets/life_circle.html.38c48348.js"><link rel="prefetch" href="/mini-program-docs/assets/page_config.html.0c877ed6.js"><link rel="prefetch" href="/mini-program-docs/assets/plug.html.0dc64cdf.js"><link rel="prefetch" href="/mini-program-docs/assets/profile.html.9d930184.js"><link rel="prefetch" href="/mini-program-docs/assets/index.html.b0193db7.js"><link rel="prefetch" href="/mini-program-docs/assets/routes.html.039c6971.js"><link rel="prefetch" href="/mini-program-docs/assets/wxml.html.c7c73fb1.js"><link rel="prefetch" href="/mini-program-docs/assets/wxs.html.aab2b34f.js"><link rel="prefetch" href="/mini-program-docs/assets/customComponent.html.f757031e.js"><link rel="prefetch" href="/mini-program-docs/assets/customTabbar.html.753fe5c7.js"><link rel="prefetch" href="/mini-program-docs/assets/stateManger.html.51ca3d2f.js"><link rel="prefetch" href="/mini-program-docs/assets/subpackages.html.68cab13e.js"><link rel="prefetch" href="/mini-program-docs/assets/use_vantUI.html.5890a29e.js"><link rel="prefetch" href="/mini-program-docs/assets/index.html.d2ca1359.js"><link rel="prefetch" href="/mini-program-docs/assets/flex.html.6392476d.js"><link rel="prefetch" href="/mini-program-docs/assets/mobile.html.eec0fc3f.js"><link rel="prefetch" href="/mini-program-docs/assets/index.html.f8b07048.js"><link rel="prefetch" href="/mini-program-docs/assets/404.html.377ad5d2.js"><link rel="prefetch" href="/mini-program-docs/assets/404.cd929c6b.js"><link rel="prefetch" href="/mini-program-docs/assets/Layout.54a2e938.js">
+    <link rel="stylesheet" href="/mini-program-docs/assets/style.f6dfbb02.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/mini-program-docs/" class=""><!----><span class="site-name">小程序</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><!----><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><!----><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading">开发工具介绍 <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/mini-program-docs/mini_basic_use/basic/tool_desc.html#开发工具界面组成" class="router-link-active router-link-exact-active sidebar-item" aria-label="开发工具界面组成"><!--[--><!--]--> 开发工具界面组成 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/mini-program-docs/mini_basic_use/basic/tool_desc.html#编辑器项目目录介绍" class="router-link-active router-link-exact-active sidebar-item" aria-label="编辑器项目目录介绍"><!--[--><!--]--> 编辑器项目目录介绍 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="开发工具介绍" tabindex="-1"><a class="header-anchor" href="#开发工具介绍" aria-hidden="true">#</a> 开发工具介绍</h1><h2 id="开发工具界面组成" tabindex="-1"><a class="header-anchor" href="#开发工具界面组成" aria-hidden="true">#</a> 开发工具界面组成</h2><p><img src="/mini-program-docs/images/tool5.png" alt="开发工具界面"></p><ul><li><p>菜单栏 切换项目等操作</p></li><li><p>模拟器 用于展示编译后的效果</p></li><li><p>编辑器 用于编辑代码(也可使用其他编辑器如 vscode 替代)</p></li><li><p>调试器 类似于 chrome 的调试器</p></li><li><p>工具栏</p><ul><li>模拟器 控制是否使用模拟器</li><li>编辑器 控制是否使用编辑器</li><li>调试器 用于调试 <strong><p>注意: 上面三个部分,至少保留一个</p></strong></li><li>可视化 可以实现拖拽组件等操作,快速搭建页面(一般不使用,代码为王)</li><li>云开发 (我们需要为小程序的数据搭建服务器,但是搭建服务器比较繁琐,使用云开发可以省去我们自己搭建服务器的步骤,不过这里不做介绍,因为云开发主要涉及后端开发知识)</li><li>小程序模式 两种模式: 小程序模式和插件模式 选择小程序模式</li><li>普通编译 可以选择编译模式(进入小程序的方式)</li><li>编译按钮 点击则重新编译代码(默认保存代码则自动编译,但有时编辑器会出现卡顿,需要手动编译)</li><li>预览按钮 可以在真机上查看页面效果</li><li>真机调试按钮 在真机上预览页面, 弹出调试窗口</li><li>清缓存按钮</li><li>上传按钮 可以将项目上传给腾讯进行审核,审核通过则上线</li><li>版本管理按钮 利用 git 实现管本管理</li><li>详情按钮 展示或修改项目信息</li><li>消息按钮 微信小程序推送的通知</li></ul></li></ul><h2 id="编辑器项目目录介绍" tabindex="-1"><a class="header-anchor" href="#编辑器项目目录介绍" aria-hidden="true">#</a> 编辑器项目目录介绍</h2><p><img src="/mini-program-docs/images/tool6.png" alt="项目目录"></p><div class="language-dir ext-dir line-numbers-mode"><pre class="language-dir"><code>├── pages 存放小程序页面的目录
+│   ├── index  index页面目录
+│   │   ├── index.js  index页面的逻辑文件
+│   │   ├── index.json index页面的配置文件
+│   │   ├── index.wxml index页面的结构文件
+│   │   └── index.wxss index页面的样式文件
+│   ├── logs
+│   │   ├── logs.js
+│   │   ├── logs.json
+│   │   ├── logs.wxml
+│   │   └── logs.wxss
+├── utils
+│   └── utils.js 存放工具函数
+├── .eslintrc.js eslint配置文件
+├── app.js 全局逻辑文件 App() 必须在 app.js 中调用，必须调用且只能调用一次
+├── app.json 全局配置文件
+├── app.wxss 全局样式文件
+├── project.config.json 项目的配置文件
+├── project.private.config.json 项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中
+└── sitemap.json 用来配置小程序及其页面是否允许被微信索引(小程序是否可以在微信中被检索)
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--[--><!--]--></div><footer class="page-meta"><!----><!----><!----></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/mini-program-docs/assets/app.19a248fc.js" defer></script>
+  </body>
+</html>
